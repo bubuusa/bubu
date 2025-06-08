@@ -1,47 +1,125 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>アメリカの国立公園ガイド</title>
-    <link rel="stylesheet" href="index.css">
+  <meta charset="UTF-8">
+  <title>グランドキャニオン案内人</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: "Arial", sans-serif;
+      margin: 0;
+      background-color: #fff8f0;
+      color: #4d2c19; /* 赤茶系文字色 */
+    }
+    header {
+      background-color: #cd5822;
+      color: white;
+      padding: 1em;
+      text-align: center;
+    }
+    .icon {
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 0.5em;
+    }
+    nav {
+      background-color: #daab1e;
+      padding: 0.5em;
+      text-align: center;
+    }
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #60361e;
+      font-weight: bold;
+    }
+    main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2em;
+    }
+    .map-container {
+      max-width: 800px;
+      width: 100%;
+      
+    }
+    .map-image {
+      width: 100%;
+      height: auto;
+      border: 1px solid #ccc;
+    }
+    .locations {
+      margin-top: 2em;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1em;
+    }
+    .location {
+      background-color: #c2701e;
+      border: 1px solid #d2a679;
+      padding: 0.7em 1em;
+      border-radius: 5px;
+    }
+    .location a {
+      color: #803000;
+      text-decoration: none;
+    }
+    footer {
+      margin-top: 3em;
+      padding: 1em;
+      background-color: #e4c1a1;
+      text-align: center;
+      font-size: 0.9em;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>アメリカの国立公園ガイド</h1>
-        <p>美しい自然と歴史を感じる場所へようこそ。</p>
-    </header>
 
-    <main>
-        <section class="park">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e4/Grand_Canyon_view_from_Pima_Point_2010.jpg" alt="グランドキャニオン">
-            <div class="park-info">
-                <h2>グランドキャニオン国立公園</h2>
-                <p>アリゾナ州に位置する壮大な峡谷。世界中の観光客を魅了する絶景スポットです。</p>
-            </div>
-        </section>
+  <header>
+   
+    <h1>グランドキャニオン案内人</h1>
+   
+  </header>
 
-        <section class="park">
-            <img src="c:\Users\momon\OneDrive\デスクトップ\HTML_practice\canyonland.jpg" alt="ヨセミテ国立公園">
-            <div class="park-info">
-                <h2>ヨセミテ国立公園</h2>
-                <p>カリフォルニア州の山岳地帯に広がる自然公園で、滝や岩山、セコイアの森が有名です。</p>
-            </div>
-        </section>
+  <nav>
+    <a href="pixel.html">HOME</a>
 
-        <section class="park">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/9/94/YellowstonefallJUN05.JPG" alt="イエローストーン国立公園">
-            <div class="park-info">
-                <h2>イエローストーン国立公園</h2>
-                <p>アメリカ初の国立公園。間欠泉や野生動物、壮大な自然が魅力。</p>
-            </div>
-        </section>
-    </main>
+    <a href="#">観光地一覧</a>
+    <a href="#">モデルコース</a>
+    <a href="bicycle.html">自転車</a>
+    <a href="#">ハイキング</a>
+    <a href="#">キャンプ</a>
+    <a href="#">アクセス情報</a>
+    <a href="#">サイト情報</a>
+    
 
-    <footer>
-        <p>© 2025 National Parks of America</p>
-    </footer>
+  </nav>
 
-    <script src="script.js"></script>
+  <main>
+    <div class="map-container">
+      <img src="c:\Users\momon\OneDrive\デスクトップ\large_detailed_tourist_attractions_panoramic_map_of_northern_arizona_state.jpg" alt="アメリカ西部地図" class="map-image">
+    </div>
+
+    <div class="locations">
+      <div class="location"><a href="ラスベガス.html">ラスベガス</a></div>
+      <div class="location"><a href="ページ.html">ページ</a></div>
+      <div class="location"><a href="フェニックス.html">フェニックス</a></div>
+      <div class="location"><a href="セリグマン.html">セリグマン</a></div>
+      <div class="location"><a href="グランドキャニオン.html">グランドキャニオン</a></div>
+      <div class="location"><a href="モニュメントバレー.html">モニュメントバレー</a></div>
+      <div class="location"><a href="セドナ.html">セドナ</a></div>
+      <div class="location"><a href="グレンキャニオンダム.html">グレンキャニオンダム</a></div>
+      <div class="location"><a href="ザイオン国立公園.html">ザイオン国立公園</a></div>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 グランドキャニオン案内人
+  </footer>
+
 </body>
 </html>
+
+
